@@ -1,4 +1,3 @@
-import { Card } from "./ui/card";
 
 export function Brands() {
   const brands = [

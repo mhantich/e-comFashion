@@ -1,4 +1,3 @@
-import React from 'react';
 import { Truck, RotateCcw, Tag, HelpCircle, Facebook, Twitter, Youtube } from 'lucide-react';
 
 export default function Footer() {
