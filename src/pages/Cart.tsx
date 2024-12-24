@@ -1,7 +1,7 @@
 import { useCartStore } from '@/stores/useCartStore';
 
 export function Cart() {
-  const { items, total } = useCartStore();
+  const { items } = useCartStore();
 
   return (
     <div>
