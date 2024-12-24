@@ -33,7 +33,7 @@ export function Slider() {
               className="w-full h-full object-cover"
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/10" />
           </div>
 
           {/* Text Content */}

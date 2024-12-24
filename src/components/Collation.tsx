@@ -1,39 +1,19 @@
-import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Eye, ShoppingCart } from 'lucide-react';
+import { Product } from '@/types';
 
-const products = [
-  {
-    id: 1,
-    name: "Full Sleeve Cover Shirt",
-    price: 40.00,
-    image: "product-item1.jpg"
-  },
-  {
-    id: 2,
-    name: "Volunteer Half Blue",
-    price: 38.00,
-    image: "product-item2.jpg"
-  },
-  {
-    id: 3,
-    name: "Double Yellow Shirt",
-    price: 44.00,
-    image: "product-item3.jpg"
-  },
-  {
-    id: 4,
-    name: "Long Belly Grey Pant",
-    price: 33.00,
-    image: "product-item4.jpg"
-  }
-];
+interface CollationProps {
+  products: Product[];
+  title: string; // Add this line to include the title property
 
-export default function Collation() {
+}
+
+
+export default function Collation({ products, title }: CollationProps) {
   return (
     <section className="max-w-7xl mx-auto px-4 py-12">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-4xl font-bold">Featured Products</h2>
+        <h2 className="text-4xl font-bold">{title}</h2>
         <a href="#" className="text-lg hover:underline flex items-center">
           View All Products 
           <span className="ml-2">→</span>

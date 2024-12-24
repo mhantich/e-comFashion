@@ -16,7 +16,7 @@ export function Header() {
             logo
         </Link>
 
-        <nav className="flex-1 flex font-serif justify-center items-center gap-6">
+        <nav className="flex-1 hidden  md:flex font-serif justify-center items-center gap-6">
           <Link to="/products" className="text-primary">
             Products
           </Link>
