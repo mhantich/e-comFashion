@@ -4,7 +4,7 @@ import { ProtectedRoute } from '@/routes/ProtectedRoute';
 
 // Public Pages
 import { Home } from '@/pages/Home';
-import { ProductDetails } from '@/pages/ProductDetails';
+import ProductDetail from '@/pages/ProductDetails';
 import { Cart } from '@/pages/Cart';
 import { Checkout } from '@/pages/Checkout';
 import { Login } from '@/pages/Login';
@@ -30,7 +30,7 @@ function App() {
           {/* Public Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<AboutUsSection />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/store" element={<ShopLayout />} />

@@ -1,14 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Eye, ShoppingCart } from 'lucide-react';
 import { Product } from '@/types';
+import { Link } from "react-router-dom";
 
 interface CollationProps {
   products: Product[];
   title: string; // Add this line to include the title property
 
 }
-
-
 export default function Collation({ products, title }: CollationProps) {
   return (
     <section className="max-w-7xl font-serif capitalize mx-auto px-4 py-12">
@@ -19,7 +18,6 @@ export default function Collation({ products, title }: CollationProps) {
           <span className="ml-2">→</span>
         </a>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {products.map((product) => (
         <Card key={product.id} className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow group relative">
@@ -37,7 +35,8 @@ export default function Collation({ products, title }: CollationProps) {
               </button>
               <button className="bg-white text-black px-6 py-2 rounded-full flex items-center gap-2 hover:bg-gray-100 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
                 <Eye className="w-4 h-4" />
-                View Details
+                <Link to='products/1'>  View Details</Link>
+              
               </button>
             </div>
           </div>
