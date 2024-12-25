@@ -20,6 +20,7 @@ import { ManageOrders } from '@/pages/admin/ManageOrders';
 import { ManageUsers } from '@/pages/admin/ManageUsers';
 import AboutUsSection from './pages/AboutUsSection';
 import ShopLayout from './pages/ShopLayout';
+import { Regester } from './pages/Regester';
 
 function App() {
   return (
@@ -33,7 +34,6 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/store" element={<ShopLayout />} />
-          <Route path="/login" element={<Login />} />
 
           {/* Protected User Routes */}
           <Route
@@ -86,7 +86,10 @@ function App() {
               </ProtectedRoute>
             }
           />
+        <Route path="/login" element={<Login />} />
+        <Route path="/regester" element={<Regester />} />
         </Route>
+
       </Routes>
     </BrowserRouter>
   );

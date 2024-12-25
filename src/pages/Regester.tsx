@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-export const Login = () => {
+export const Regester = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,7 +23,7 @@ export const Login = () => {
           </div>
         </div>
 
-        {/* Right Side - Login Form */}
+        {/* Right Side - Regester Form */}
         <div className="w-full md:w-1/2 p-8 md:p-12 bg-white">
           <div className="max-w-md mx-auto">
             <h2 className="text-3xl font-bold mb-2">Welcome Back!</h2>
@@ -32,6 +32,29 @@ export const Login = () => {
             </p>
 
             <form className="space-y-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Enter your Name
+                </label>
+                <input
+                  type="Name"
+        
+                  placeholder="johndoe@mail.domain"
+                  className="w-full px-4 py-3 rounded-lg border text-white border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Enter your Last Name
+                </label>
+                <input
+                  type="lastName"
+                 
+             
+                  placeholder="johndoe@mail.domain"
+                  className="w-full px-4 py-3 rounded-lg border text-white border-gray-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                />
+              </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Enter your email
@@ -83,13 +106,13 @@ export const Login = () => {
                 type="submit"
                 className="w-full bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors duration-200"
               >
-                Login
+                Regester
               </button>
 
               <div className="text-center text-sm text-gray-600">
-                Don't have an account?{' '}
-                <Link to="/regester" className="text-orange-500 hover:text-orange-600 font-medium">
-                  Register Now
+                You have an account?{' '}
+                <Link to="/login" className="text-orange-500 hover:text-orange-600 font-medium">
+                  login Now
                 </Link>
               </div>
             </form>
