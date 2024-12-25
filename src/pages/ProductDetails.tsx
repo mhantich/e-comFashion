@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, Star, StarHalf, MapPin, Plus, Minus } from 'lucide-react';
 
 const ProductDetail = () => {
@@ -6,6 +6,9 @@ const ProductDetail = () => {
   const [selectedColor, setSelectedColor] = useState('Cream');
   const [quantity, setQuantity] = useState(2);
   const [currentImage, setCurrentImage] = useState(0);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []); 
 
   const images = [
     '/images/selling-products13.jpg',

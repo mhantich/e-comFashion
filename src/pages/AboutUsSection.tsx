@@ -6,7 +6,7 @@ import Paralllax from "./Paralllax";
 const AboutUsSection = () => {
   return (
     <div>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 ">
         <Paralllax title='About us'/>
         <div className="flex flex-col md:flex-row gap-12 items-center">
           {/* Image Section */}

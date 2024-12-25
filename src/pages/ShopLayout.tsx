@@ -2,6 +2,7 @@ import { Eye, Search, ShoppingCart } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { demoProductsSelling } from '@/data/data';
 import Paralllax from './Paralllax';
+import { Link } from 'react-router-dom';
 
 const ShopLayout = () => {
   const categories = ['All', 'Shoes', 'Tshirts', 'Pants', 'Hoodie', 'Outer', 'Jackets', 'Accessories'];
@@ -56,7 +57,8 @@ const ShopLayout = () => {
               </button>
               <button className="bg-white text-black px-6 py-2 rounded-full flex items-center gap-2 hover:bg-gray-100 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
                 <Eye className="w-4 h-4" />
-                View Details
+                <Link to='products/1'>  View Details</Link>
+
               </button>
             </div>
           </div>
@@ -79,7 +81,7 @@ const ShopLayout = () => {
                 placeholder="Search"
                 className="w-full p-2 pr-10 border border-gray-200 rounded"
                 />
-              <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-200 w-5 h-5" />
             </div>
           </div>
 
@@ -89,7 +91,7 @@ const ShopLayout = () => {
             <div className="space-y-2">
               {tags.map((tag) => (
                   <div key={tag} className="flex items-center">
-                  <label className="text-gray-600 hover:text-black cursor-pointer">
+                  <label className="text-primary cursor-pointer">
                     {tag}
                   </label>
                 </div>
@@ -103,7 +105,7 @@ const ShopLayout = () => {
             <div className="space-y-2">
               {brands.map((brand) => (
                 <div key={brand} className="flex items-center">
-                  <label className="text-gray-600 hover:text-black cursor-pointer">
+                  <label className="text-primary cursor-pointer">
                     {brand}
                   </label>
                 </div>
@@ -117,7 +119,7 @@ const ShopLayout = () => {
             <div className="space-y-2">
               {priceRanges.map((range) => (
                 <div key={range} className="flex items-center">
-                  <label className="text-gray-600 hover:text-black cursor-pointer">
+                  <label className="text-primary  cursor-pointer">
                     {range}
                   </label>
                 </div>

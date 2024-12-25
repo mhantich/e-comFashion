@@ -8,7 +8,7 @@ export const Login = () => {
   const [password, setPassword] = useState('');
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50 p-4">
+    <div className="min-h-screen w-full flex items-center justify-center p-4">
       <div className="w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
         {/* Left Side - Image */}
         <div className="hidden lg:inline  relative w-full md:w-1/2  p-8">
