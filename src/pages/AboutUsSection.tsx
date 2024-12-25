@@ -1,6 +1,6 @@
 import { CollationInta } from '@/components/CollationInta';
 import { Reviws } from '@/components/Reviws';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const AboutUsSection = () => {
   const [offset, setOffset] = useState(0);
