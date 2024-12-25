@@ -4,11 +4,9 @@ import { ProtectedRoute } from '@/routes/ProtectedRoute';
 
 // Public Pages
 import { Home } from '@/pages/Home';
-import { Products } from '@/pages/Products';
 import { ProductDetails } from '@/pages/ProductDetails';
 import { Cart } from '@/pages/Cart';
 import { Checkout } from '@/pages/Checkout';
-import { Search } from '@/pages/Search';
 import { Login } from '@/pages/Login';
 
 // Protected Pages
@@ -21,6 +19,7 @@ import { ManageProducts } from '@/pages/admin/ManageProducts';
 import { ManageOrders } from '@/pages/admin/ManageOrders';
 import { ManageUsers } from '@/pages/admin/ManageUsers';
 import AboutUsSection from './pages/AboutUsSection';
+import ShopLayout from './pages/ShopLayout';
 
 function App() {
   return (
@@ -30,11 +29,10 @@ function App() {
           {/* Public Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<AboutUsSection />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/store" element={<ShopLayout />} />
           <Route path="/login" element={<Login />} />
 
           {/* Protected User Routes */}
