@@ -11,9 +11,9 @@ interface CollationProps {
 
 export default function Collation({ products, title }: CollationProps) {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="max-w-7xl font-serif capitalize mx-auto px-4 py-12">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-4xl font-bold">{title}</h2>
+        <h2 className="text-4xl font-bold ">{title}</h2>
         <a href="#" className="text-lg hover:underline flex items-center">
           View All Products 
           <span className="ml-2">→</span>

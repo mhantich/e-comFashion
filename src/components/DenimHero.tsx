@@ -1,6 +1,6 @@
 export default function DenimHero() {
   return (
-    <div className="relative  container min-h-screen bg-gray-50">
+    <div className="relative  container min-h-screen  ">
       <div className="    mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
         {/* Image Section */}
         <div  className="relative w-full hidden lg:inline h-[80vh] lg:h-screen">
@@ -12,20 +12,20 @@ export default function DenimHero() {
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col justify-center lg:pl-12 py-12 lg:py-0">
+        <div className="flex  flex-col justify-center lg:pl-12 py-12 lg:py-0">
           <div className="space-y-6 max-w-xl">
             {/* Category Text with Animation */}
-            <span className="text-gray-500 text-lg tracking-wider animate-fade-in">
+            <span className="text-primary text-lg tracking-wider animate-fade-in">
               DENIM COLLECTION
             </span>
 
             {/* Main Title with Animation */}
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight animate-slide-up">
+            <h1 className="text-5x text-primary lg:text-7xl font-bold leading-tight animate-slide-up">
               The Casual Selection.
             </h1>
 
             {/* Description with Animation */}
-            <p className="text-gray-600 text-lg leading-relaxed animate-fade-in-delay">
+            <p className="text-primary text-lg leading-relaxed animate-fade-in-delay">
               Vel non viverra ligula odio ornare turpis mauris. Odio aliquam,
               tincidunt ut vitae elit risus. Tempor egestas condimentum et ac
               rutrum dui, odio.
