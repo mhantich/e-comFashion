@@ -1,5 +1,5 @@
 import { Eye, Search, ShoppingCart } from 'lucide-react';
-import Parallaxeffect from '@/components/parallaxeffect';
+import Parallaxeffect from "../components/parallaxeffect";
 import { Card } from '@/components/ui/card';
 import { demoProductsSelling } from '@/data/data';
 

@@ -1,6 +1,6 @@
 import { Brands } from "@/components/Brands";
 import { CollationInta } from "@/components/CollationInta";
-import Parallaxeffect from "@/components/parallaxeffect";
+import Parallaxeffect from "../components/parallaxeffect";
 import { Reviws } from "@/components/Reviws";
 
 const AboutUsSection = () => {
