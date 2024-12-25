@@ -1,7 +1,7 @@
 import { Eye, Search, ShoppingCart } from 'lucide-react';
-import Parallaxeffect from "../components/parallaxeffect";
 import { Card } from '@/components/ui/card';
 import { demoProductsSelling } from '@/data/data';
+import Paralllax from './Paralllax';
 
 const ShopLayout = () => {
   const categories = ['All', 'Shoes', 'Tshirts', 'Pants', 'Hoodie', 'Outer', 'Jackets', 'Accessories'];
@@ -20,7 +20,7 @@ const ShopLayout = () => {
 
   return (
     <div>
-<Parallaxeffect title="store" />
+<Paralllax title="store" />
     <div className="container mx-auto px-4 py-8">
       {/* Top Categories */}
       <div className="mb-8 overflow-x-auto">

@@ -1,13 +1,13 @@
 import { Brands } from "@/components/Brands";
 import { CollationInta } from "@/components/CollationInta";
-import Parallaxeffect from "../components/parallaxeffect";
 import { Reviws } from "@/components/Reviws";
+import Paralllax from "./Paralllax";
 
 const AboutUsSection = () => {
   return (
     <div>
       <div className="container mx-auto px-4 py-16">
-        <Parallaxeffect title='About us'/>
+        <Paralllax title='About us'/>
         <div className="flex flex-col md:flex-row gap-12 items-center">
           {/* Image Section */}
           <div className="w-full md:w-1/2">

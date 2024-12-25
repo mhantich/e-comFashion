@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function Parallaxeffect({ title }: { title: string }) {
+function Paralllax({ title }: { title: string }) {
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {
@@ -48,4 +48,4 @@ function Parallaxeffect({ title }: { title: string }) {
   )
 }
 
-export default Parallaxeffect
+export default Paralllax
