@@ -9,6 +9,7 @@ type ProtectedRouteProps = {
 export function ProtectedRoute({ children, allowedRoles }: ProtectedRouteProps) {
   const { isAuthenticated, user } = useAuthStore();
   const location = useLocation();
+  console.log(isAuthenticated, user)
 
   if (!isAuthenticated) {
     return <Navigate to="/login" state={{ from: location }} replace />;

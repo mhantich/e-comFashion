@@ -20,6 +20,7 @@ import { AdminDashboard } from '@/pages/admin/Dashboard';
 import { ManageProducts } from '@/pages/admin/ManageProducts';
 import { ManageOrders } from '@/pages/admin/ManageOrders';
 import { ManageUsers } from '@/pages/admin/ManageUsers';
+import AboutUsSection from './pages/AboutUsSection';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route element={<Layout />}>
           {/* Public Routes */}
           <Route path="/" element={<Home />} />
+          <Route path="/About" element={<AboutUsSection />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
