@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { ChevronLeft, ChevronRight, Star, StarHalf, MapPin, Plus, Minus, ExternalLink } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, StarHalf, MapPin, Plus, Minus } from 'lucide-react';
 
 const ProductDetail = () => {
   const [selectedSize, setSelectedSize] = useState('S');
