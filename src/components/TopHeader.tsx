@@ -1,6 +1,5 @@
 
 import { ShoppingCart, User } from 'lucide-react';
-import { useCartStore } from '@/stores/useCartStore';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { ThemeToggle } from './layout/ThemeToggle';
 import { Link } from 'react-router-dom';
